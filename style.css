@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 200px;
+}
+
+button {
+    color: white;
+    background-color: #c51111;
+    border-radius: 3px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+p {
+    color: white;
+}
+
+.irmaos {
+    height: 500px;
+}
+
+body {
+    height: 100vh;
+}
+
+.caixa-mae {
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    justify-content: space-around;
+    height: 100vh;
+    height: 100vh;
+
+}
+
+.caixa-principal {
+    width: 40%;
+}
+
+.caixa-video {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+}
+
+video {
+    width: 100vw;
+}
+
+.mascara-video {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+}
+
+.whatsapp {
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+}
+
+.header img {
+    height: 70px;
+}
+
+.header a {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.header a:hover {
+    color: #c51111;
+    font-size: 26px;
+    transition: 0.5 ease-in-out;
+}
+
+button:hover {
+    background-color: green;
+    font-size: 16px;
+}
+
+
+.fale-conosco {
+    background: #fff;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    position: fixed;
+    left: -320px;
+    top: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    transition: left 1s linear;
+    z-index: 6;
+}
+
+input {
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding-left: 10px;
+    outline-color: chartreuse;
+}
+
+textarea {
+    width: 270px;
+    height: 103px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding: 10px;
+    outline-color: chartreuse;
+}
+
+.mascara-form {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    
+}
+
+
+@media(max-width:1100px) {
+
+    button {
+        background-color: blue;
+        border: black;
+    }
+
+    p {display: none;}
+
+    .caixa-mae {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding:10px;
+
+    }
+
+    .caixa-principal {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 200px;
+        margin: 10px;
+    }
+
+    .header a {
+        font-size: 20px;
+    }
+
+    .header img {
+        display: none;
+    }
+    
+    .irmaos {
+        width: 80vw;
+        height: auto;
+    }
+
+    video {
+        width: 100%;
+        height: 100%;
+    }
+
+    .caixa-video {
+        position: fixed;
+        z-index: -1;
+        top: auto;
+    }
+}
